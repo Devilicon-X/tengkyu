@@ -6,7 +6,7 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('hihi.jpg') no-repeat center center fixed;
+  background: url('hihi.jpg') no-repeat center center fixed; /* Mengganti nama file menjadi hihi.jpg */
   background-size: cover;
 }
 
@@ -20,31 +20,32 @@ body, html {
 
 .box {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
+  padding: 10px 15px; /* Memperkecil padding */
   border-radius: 10px;
   text-align: center;
+  width: 250px; /* Ukuran kotak lebih kecil */
   animation: fadeIn 2s forwards;
 }
 
 #message {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Ukuran font lebih kecil */
   color: #333;
 }
 
 #nextBtn {
-  margin-top: 20px;
-  padding: 10px 20px;
+  margin-top: 15px;
+  padding: 10px;
   font-size: 1rem;
   cursor: pointer;
-  border: none;
-  background-color: #007BFF;
-  color: white;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  background-color: transparent; /* Buat tombol transparan */
+  border: none; /* Hilangkan border */
+  color: #007BFF; /* Warna teks tombol */
+  text-decoration: underline; /* Tambahkan garis bawah untuk gaya tombol */
+  transition: color 0.3s ease;
 }
 
 #nextBtn:hover {
-  background-color: #0056b3;
+  color: #0056b3; /* Ubah warna saat hover */
 }
 
 @keyframes fadeIn {
